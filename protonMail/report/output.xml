@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on darwin)" generated="20230316 06:58:36.566" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginSuite" source="/Users/dropsuite/Desktop/Automation template/protonMail/testSuite/endUser/LoginSuite.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230316 06:58:36.649" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20230316 06:58:36.649" endtime="20230316 06:58:38.510"/>
+</kw>
+<test id="s1-t1" name="login to proton with valid credentials" line="11">
+<kw name="valid login to proton" library="LoginTest">
+<arg>${EMAIL}</arg>
+<arg>${PASSWORD}</arg>
+<kw name="GIVEN user on the login page" library="LoginPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230316 06:58:38.511" level="INFO">Opening url 'https://account.proton.me/login'</msg>
+<status status="PASS" starttime="20230316 06:58:38.511" endtime="20230316 06:58:43.348"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1400</arg>
+<arg>900</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230316 06:58:43.349" endtime="20230316 06:58:43.463"/>
+</kw>
+<status status="PASS" starttime="20230316 06:58:38.511" endtime="20230316 06:58:43.463"/>
+</kw>
+<kw name="WHEN user input username and password" library="LoginPage">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${emailField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230316 06:58:43.463" endtime="20230316 06:58:45.288"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${emailField}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230316 06:58:45.289" level="INFO">Typing text 'yupiland@proton.me' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20230316 06:58:45.289" endtime="20230316 06:58:45.375"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${emailLogin}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230316 06:58:45.376" level="INFO">${emailLogin} = yupiland@proton.me</msg>
+<status status="PASS" starttime="20230316 06:58:45.375" endtime="20230316 06:58:45.376"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passwordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230316 06:58:45.376" level="INFO">Typing text 'Qwerty@123' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230316 06:58:45.376" endtime="20230316 06:58:45.417"/>
+</kw>
+<status status="PASS" starttime="20230316 06:58:43.463" endtime="20230316 06:58:45.417"/>
+</kw>
+<kw name="AND user click sign in button" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230316 06:58:45.418" endtime="20230316 06:58:45.429"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230316 06:58:45.429" level="INFO">Clicking element 'xpath=//button[contains(@class,"button-large")][contains(text(),'Sign in')]'.</msg>
+<status status="PASS" starttime="20230316 06:58:45.429" endtime="20230316 06:58:45.451"/>
+</kw>
+<status status="PASS" starttime="20230316 06:58:45.417" endtime="20230316 06:58:45.451"/>
+</kw>
+<kw name="THEN user can see proton dashboard" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[contains(@class,"user-dropdown-email")][contains(text(),'${emailLogin}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230316 06:58:55.796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230316 06:58:55.796" level="FAIL">Element 'xpath=//*[contains(@class,"user-dropdown-email")][contains(text(),'yupiland@proton.me')]' not visible after 10 seconds.</msg>
+<status status="FAIL" starttime="20230316 06:58:45.451" endtime="20230316 06:58:55.797"/>
+</kw>
+<status status="FAIL" starttime="20230316 06:58:45.451" endtime="20230316 06:58:55.797"/>
+</kw>
+<status status="FAIL" starttime="20230316 06:58:38.511" endtime="20230316 06:58:55.797"/>
+</kw>
+<kw name="post result to practitest" library="LoginTest" type="TEARDOWN">
+<kw name="GIVEN ehe" library="LoginPage">
+<kw name="conn = http.client.HTTPSConnection(&quot;api.practitest.com&quot;)">
+<msg timestamp="20230316 06:58:55.799" level="FAIL">No keyword with name 'conn = http.client.HTTPSConnection("api.practitest.com")' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.799" endtime="20230316 06:58:55.799"/>
+</kw>
+<kw name="payload = json.dumps({">
+<msg timestamp="20230316 06:58:55.801" level="FAIL">No keyword with name 'payload = json.dumps({' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.801" endtime="20230316 06:58:55.801"/>
+</kw>
+<kw name="&quot;data&quot;: {">
+<msg timestamp="20230316 06:58:55.803" level="FAIL">No keyword with name '"data": {' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.803" endtime="20230316 06:58:55.803"/>
+</kw>
+<kw name="&quot;type&quot;: &quot;instances&quot;,">
+<msg timestamp="20230316 06:58:55.805" level="FAIL">No keyword with name '"type": "instances",' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.805" endtime="20230316 06:58:55.805"/>
+</kw>
+<kw name="&quot;attributes&quot;: {">
+<msg timestamp="20230316 06:58:55.807" level="FAIL">No keyword with name '"attributes": {' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.807" endtime="20230316 06:58:55.807"/>
+</kw>
+<kw name="&quot;instance-id&quot;: 65117398,">
+<msg timestamp="20230316 06:58:55.809" level="FAIL">No keyword with name '"instance-id": 65117398,' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.809" endtime="20230316 06:58:55.809"/>
+</kw>
+<kw name="&quot;exit-code&quot;: 0,">
+<msg timestamp="20230316 06:58:55.811" level="FAIL">No keyword with name '"exit-code": 0,' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.811" endtime="20230316 06:58:55.811"/>
+</kw>
+<kw name="&quot;automated-execution-output&quot;: &quot;THIS IS MY OUTPUT&quot;">
+<msg timestamp="20230316 06:58:55.812" level="FAIL">No keyword with name '"automated-execution-output": "THIS IS MY OUTPUT"' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.812" endtime="20230316 06:58:55.812"/>
+</kw>
+<kw name="}">
+<msg timestamp="20230316 06:58:55.814" level="FAIL">No keyword with name '}' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.814" endtime="20230316 06:58:55.814"/>
+</kw>
+<kw name="}">
+<msg timestamp="20230316 06:58:55.815" level="FAIL">No keyword with name '}' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.815" endtime="20230316 06:58:55.815"/>
+</kw>
+<kw name="})">
+<msg timestamp="20230316 06:58:55.817" level="FAIL">No keyword with name '})' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.817" endtime="20230316 06:58:55.817"/>
+</kw>
+<kw name="headers = {">
+<msg timestamp="20230316 06:58:55.819" level="FAIL">No keyword with name 'headers = {' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.819" endtime="20230316 06:58:55.819"/>
+</kw>
+<kw name="'Authorization': 'Basic bWVsdGVkY2hvY29fbW9jaGlAcHJvdG9uLm1lOjk4MmVjMDI0OWIwZTNhN2NjOWNkMDkwNTQyMmViNTEzZDFhNmIwMjI=',">
+<msg timestamp="20230316 06:58:55.820" level="FAIL">No keyword with name ''Authorization': 'Basic bWVsdGVkY2hvY29fbW9jaGlAcHJvdG9uLm1lOjk4MmVjMDI0OWIwZTNhN2NjOWNkMDkwNTQyMmViNTEzZDFhNmIwMjI=',' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.820" endtime="20230316 06:58:55.820"/>
+</kw>
+<kw name="'Content-Type': 'application/json'">
+<msg timestamp="20230316 06:58:55.822" level="FAIL">No keyword with name ''Content-Type': 'application/json'' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.822" endtime="20230316 06:58:55.822"/>
+</kw>
+<kw name="}">
+<msg timestamp="20230316 06:58:55.823" level="FAIL">No keyword with name '}' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.823" endtime="20230316 06:58:55.823"/>
+</kw>
+<kw name="conn.request(&quot;POST&quot;, &quot;/api/v2/projects/26027/runs.json&quot;, payload, headers)">
+<msg timestamp="20230316 06:58:55.825" level="FAIL">No keyword with name 'conn.request("POST", "/api/v2/projects/26027/runs.json", payload, headers)' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.825" endtime="20230316 06:58:55.825"/>
+</kw>
+<kw name="res = conn.getresponse()">
+<msg timestamp="20230316 06:58:55.827" level="FAIL">No keyword with name 'res = conn.getresponse()' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.827" endtime="20230316 06:58:55.827"/>
+</kw>
+<kw name="data = res.read()">
+<msg timestamp="20230316 06:58:55.829" level="FAIL">No keyword with name 'data = res.read()' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.829" endtime="20230316 06:58:55.829"/>
+</kw>
+<kw name="print(data.decode(&quot;utf-8&quot;))">
+<msg timestamp="20230316 06:58:55.831" level="FAIL">No keyword with name 'print(data.decode("utf-8"))' found.</msg>
+<status status="FAIL" starttime="20230316 06:58:55.831" endtime="20230316 06:58:55.831"/>
+</kw>
+<status status="FAIL" starttime="20230316 06:58:55.797" endtime="20230316 06:58:55.831"/>
+</kw>
+<status status="FAIL" starttime="20230316 06:58:55.797" endtime="20230316 06:58:55.831">Several failures occurred:
+
+1) No keyword with name 'conn = http.client.HTTPSConnection("api.practitest.com")' found.
+
+2) No keyword with name 'payload = json.dumps({' found.
+
+3) No keyword with name '"data": {' found.
+
+4) No keyword with name '"type": "instances",' found.
+
+5) No keyword with name '"attributes": {' found.
+
+6) No keyword with name '"instance-id": 65117398,' found.
+
+7) No keyword with name '"exit-code": 0,' found.
+
+8) No keyword with name '"automated-execution-output": "THIS IS MY OUTPUT"' found.
+
+    [ Message content over the limit has been removed. ]
+
+11) No keyword with name '})' found.
+
+12) No keyword with name 'headers = {' found.
+
+13) No keyword with name ''Authorization': 'Basic bWVsdGVkY2hvY29fbW9jaGlAcHJvdG9uLm1lOjk4MmVjMDI0OWIwZTNhN2NjOWNkMDkwNTQyMmViNTEzZDFhNmIwMjI=',' found.
+
+14) No keyword with name ''Content-Type': 'application/json'' found.
+
+15) No keyword with name '}' found.
+
+16) No keyword with name 'conn.request("POST", "/api/v2/projects/26027/runs.json", payload, headers)' found.
+
+17) No keyword with name 'res = conn.getresponse()' found.
+
+18) No keyword with name 'data = res.read()' found.
+
+19) No keyword with name 'print(data.decode("utf-8"))' found.</status>
+</kw>
+<doc>valid login to proton application</doc>
+<tag>function</tag>
+<tag>general</tag>
+<tag>positive</tag>
+<tag>regression</tag>
+<status status="FAIL" starttime="20230316 06:58:38.510" endtime="20230316 06:58:55.831">Element 'xpath=//*[contains(@class,"user-dropdown-email")][contains(text(),'yupiland@proton.me')]' not visible after 10 seconds.
+
+Also teardown failed:
+Several failures occurred:
+
+1) No keyword with name 'conn = http.client.HTTPSConnection("api.practitest.com")' found.
+
+2) No keyword with name 'payload = json.dumps({' found.
+
+3) No keyword with name '"data": {' found.
+
+4) No keyword with name '"type": "instances",' found.
+
+5) No keyword with name '"attributes": {' found.
+
+6) No keyword with name '"instance-id": 65117398,' found.
+
+7) No keyword with name '"exit-code": 0,' found.
+
+8) No keyword with name '"automated-execution-output": "THIS IS MY OUTPUT"' found.
+
+    [ Message content over the limit has been removed. ]
+
+11) No keyword with name '})' found.
+
+12) No keyword with name 'headers = {' found.
+
+13) No keyword with name ''Authorization': 'Basic bWVsdGVkY2hvY29fbW9jaGlAcHJvdG9uLm1lOjk4MmVjMDI0OWIwZTNhN2NjOWNkMDkwNTQyMmViNTEzZDFhNmIwMjI=',' found.
+
+14) No keyword with name ''Content-Type': 'application/json'' found.
+
+15) No keyword with name '}' found.
+
+16) No keyword with name 'conn.request("POST", "/api/v2/projects/26027/runs.json", payload, headers)' found.
+
+17) No keyword with name 'res = conn.getresponse()' found.
+
+18) No keyword with name 'data = res.read()' found.
+
+19) No keyword with name 'print(data.decode("utf-8"))' found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230316 06:58:55.832" endtime="20230316 06:58:55.896"/>
+</kw>
+<status status="FAIL" starttime="20230316 06:58:36.567" endtime="20230316 06:58:55.896"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">function</stat>
+<stat pass="0" fail="1" skip="0">general</stat>
+<stat pass="0" fail="1" skip="0">positive</stat>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginSuite">LoginSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230316 06:58:36.625" level="ERROR">Error in file '/Users/dropsuite/Desktop/Automation template/protonMail/config/dev.robot' on line 15: Importing library 'GmailEmailLibrary' failed: ModuleNotFoundError: No module named 'GmailEmailLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/dropsuite/Desktop/Automation template/protonMail
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python311.zip
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload
+  /opt/homebrew/lib/python3.11/site-packages</msg>
+<msg timestamp="20230316 06:58:36.627" level="ERROR">Error in file '/Users/dropsuite/Desktop/Automation template/protonMail/config/dev.robot' on line 17: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/dropsuite/Desktop/Automation template/protonMail
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python311.zip
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11
+  /opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload
+  /opt/homebrew/lib/python3.11/site-packages</msg>
+<msg timestamp="20230316 06:58:36.628" level="WARN">Imported library 'http.client' contains no keywords.</msg>
+</errors>
+</robot>

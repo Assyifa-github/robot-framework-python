@@ -1,0 +1,255 @@
+2022-03-06 21:57:22,933 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-03-06 21:57:22,947 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.4.3/libexec/bin/user.properties
+2022-03-06 21:57:22,947 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.4.3/libexec/bin/system.properties
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: Version 5.4.3
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: java.version=17.0.2
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: os.name=Mac OS X
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: os.arch=aarch64
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: os.version=11.5.2
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-03-06 21:57:22,950 INFO o.a.j.JMeter: java.awt.headless=null
+2022-03-06 21:57:22,951 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-03-06 21:57:22,951 INFO o.a.j.JMeter: Available Processors =8
+2022-03-06 21:57:22,956 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-03-06 21:57:22,956 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-03-06 21:57:22,956 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.4.3/libexec
+2022-03-06 21:57:22,956 INFO o.a.j.JMeter: user.dir  =/Users/dropsuite/Desktop/PROJECT/dme-test-automation3/pom-robotframework
+2022-03-06 21:57:22,956 INFO o.a.j.JMeter: PWD       =/Users/dropsuite/Desktop/PROJECT/dme-test-automation3/pom-robotframework
+2022-03-06 21:57:22,987 INFO o.a.j.JMeter: IP: 192.168.1.8 Name: Dropsuites-MacBook-Pro.local FullName: 192.168.1.8
+2022-03-06 21:57:23,210 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2022-03-06 21:57:24,083 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-03-06 21:57:24,668 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-1aaf9cdab7048f729c98362d200552b4-gui
+2022-03-06 21:57:27,583 INFO o.j.r.PluginManager: Plugins Status: [jpgc-plugins-manager=1.7, jpgc-webdriver=3.3, jmeter-core=5.4.3, jmeter-ftp=5.4.3, jmeter-http=5.4.3, jmeter-jdbc=5.4.3, jmeter-jms=5.4.3, jmeter-junit=5.4.3, jmeter-java=5.4.3, jmeter-ldap=5.4.3, jmeter-mail=5.4.3, jmeter-mongodb=5.4.3, jmeter-native=5.4.3, jmeter-tcp=5.4.3, jmeter-components=5.4.3]
+2022-03-06 21:57:37,532 INFO o.a.j.s.FileServer: Default base='/Users/dropsuite/Desktop/PROJECT/dme-test-automation3/pom-robotframework'
+2022-03-06 21:57:37,534 INFO o.a.j.g.a.Load: Loading file: /Users/dropsuite/Documents/Performance Testing/Baseline_Thread_Group.jmx
+2022-03-06 21:57:37,535 INFO o.a.j.s.FileServer: Set new base='/Users/dropsuite/Documents/Performance Testing'
+2022-03-06 21:57:37,615 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-03-06 21:57:37,618 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-03-06 21:57:37,619 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-03-06 21:57:37,619 INFO o.a.j.s.SaveService: Loading file: /Users/dropsuite/Documents/Performance Testing/Baseline_Thread_Group.jmx
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-03-06 21:57:37,674 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-03-06 21:57:37,683 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-03-06 21:57:37,683 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-03-06 21:57:37,683 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-03-06 21:57:37,683 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-03-06 21:57:37,796 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-03-06 21:57:37,842 INFO o.a.j.s.FileServer: Set new base='/Users/dropsuite/Documents/Performance Testing'
+2022-03-06 21:57:37,867 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.IllegalAccessError: class com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel (in unnamed module @0x48524010) cannot access class sun.awt.shell.ShellFolder (in module java.desktop) because module java.desktop does not export sun.awt.shell to unnamed module @0x48524010
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel.updateColumnInfo(DarkFilePaneUIBridge.java:1128) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel.<init>(DarkFilePaneUIBridge.java:1115) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.getDetailsTableModel(DarkFilePaneUIBridge.java:576) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$SortableListModel.<init>(DarkFilePaneUIBridge.java:1079) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePane.createList(DarkFilePane.java:137) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFileChooserUIBridge.createList(DarkFileChooserUIBridge.java:585) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFileChooserUIBridge$MetalFileChooserUIAccessor.createList(DarkFileChooserUIBridge.java:750) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.setViewType(DarkFilePaneUIBridge.java:376) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.propertyChange(DarkFilePaneUIBridge.java:890) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at java.awt.Component.firePropertyChange(Component.java:8722) ~[?:?]
+	at javax.swing.JComponent.setUI(JComponent.java:733) ~[?:?]
+	at javax.swing.JFileChooser.updateUI(JFileChooser.java:1839) ~[?:?]
+	at javax.swing.JFileChooser.setup(JFileChooser.java:396) ~[?:?]
+	at javax.swing.JFileChooser.<init>(JFileChooser.java:362) ~[?:?]
+	at javax.swing.JFileChooser.<init>(JFileChooser.java:309) ~[?:?]
+	at org.apache.jmeter.gui.util.FileDialoger.<clinit>(FileDialoger.java:42) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:156) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:101) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.gui.action.LoadDraggedFile.loadProject(LoadDraggedFile.java:37) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.gui.MainFrame.openJmxFilesFromDragAndDrop(MainFrame.java:855) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeTransferHandler.importData(JMeterTreeTransferHandler.java:207) ~[ApacheJMeter_core.jar:5.4.3]
+	at javax.swing.TransferHandler$DropHandler.drop(TransferHandler.java:1544) ~[?:?]
+	at java.awt.dnd.DropTarget.drop(DropTarget.java:455) ~[?:?]
+	at javax.swing.TransferHandler$SwingDropTarget.drop(TransferHandler.java:1282) ~[?:?]
+	at sun.awt.dnd.SunDropTargetContextPeer.processDropMessage(SunDropTargetContextPeer.java:548) ~[?:?]
+	at sun.lwawt.macosx.CDropTargetContextPeer.processDropMessage(CDropTargetContextPeer.java:129) ~[?:?]
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchDropEvent(SunDropTargetContextPeer.java:864) ~[?:?]
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(SunDropTargetContextPeer.java:788) ~[?:?]
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(SunDropTargetEvent.java:48) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4866) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4833) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Container.java:4649) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4511) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4833) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:722) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:716) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:746) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:744) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:743) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2022-03-06 21:57:45,672 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 21:57:45,673 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 21:57:45,673 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 21:57:45,673 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-03-06 21:57:45,674 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-03-06 21:57:45,701 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 21:57:45,731 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 21:57:45,732 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 21:57:45,732 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 21:57:45,732 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 21:57:45,735 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 21:57:45,735 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 21:57:45,735 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 21:57:49,053 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 21:58:23,501 ERROR c.g.j.p.w.s.WebDriverSampler: Sourced file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' : Method Invocation wait.until : at Line: 21 : in file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' : wait .until ( ExpectedConditions .textToBe ( By .cssSelector ( "h1" ) , "Dashboard" ) ) 
+
+Target exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text to be "Dashboard". Current text: "null" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Dropsuites-MacBook-Pro.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.35 (f60a827ddb87f..., userDataDir: /var/folders/5c/q6jr9wzs4nb...}, goog:chromeOptions: {debuggerAddress: localhost:61448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 81a8bd11344368b4dca734f1a2c128c8
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' at line number 21
+2022-03-06 21:58:25,265 ERROR c.g.j.p.w.s.WebDriverSampler: Sourced file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : Attempt to resolve method: until() on undefined variable or class name: wait : at Line: 9 : in file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : wait .until ( ExpectedConditions .visibilityOfElementLocated ( By .cssSelector ( ".keyword-search:nth-child(6) .col-lg-6 > .form-control" ) ) ) 
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' at line number 9
+2022-03-06 21:58:26,181 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Dropsuites-MacBook-Pro.local
+2022-03-06 21:58:26,188 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-03-06 21:58:26,339 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2022-03-06 21:58:26,340 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2022-03-06 21:58:26,340 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2022-03-06 21:58:26,366 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2022-03-06 21:58:26,366 INFO o.a.j.u.SSLManager: KeyStore created OK
+2022-03-06 21:58:26,366 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2022-03-06 21:58:27,437 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 21:58:27,437 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 21:58:27,519 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 21:58:27,520 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 21:59:13,811 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 21:59:13,811 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 21:59:13,813 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 21:59:13,848 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 21:59:13,848 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 21:59:13,848 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 21:59:13,848 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 21:59:13,850 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 21:59:13,850 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 21:59:13,850 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 21:59:16,924 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 21:59:21,326 ERROR c.g.j.p.w.s.WebDriverSampler: In file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' Encountered "( ExpectedConditions . visibilityOfElementLocated ( By . xpath ( \"//*[@class=\" content" at line 22, column 11.
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' at line number 22
+2022-03-06 21:59:23,164 ERROR c.g.j.p.w.s.WebDriverSampler: Sourced file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : Attempt to resolve method: until() on undefined variable or class name: wait : at Line: 9 : in file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : wait .until ( ExpectedConditions .visibilityOfElementLocated ( By .cssSelector ( ".keyword-search:nth-child(6) .col-lg-6 > .form-control" ) ) ) 
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' at line number 9
+2022-03-06 21:59:25,245 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 21:59:25,262 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 21:59:25,341 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 21:59:25,341 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:00:49,601 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:00:49,603 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:00:49,603 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:00:49,642 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:00:49,642 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:00:49,642 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:00:49,642 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:00:49,644 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:00:49,644 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:00:49,644 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:00:52,877 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:00:57,172 ERROR c.g.j.p.w.s.WebDriverSampler: In file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' Encountered "( ExpectedConditions . visibilityOfElementLocated ( By . xpath ( \"//*[@class=\" content" at line 20, column 11.
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //Open S . . . '' at line number 20
+2022-03-06 22:00:59,690 ERROR c.g.j.p.w.s.WebDriverSampler: Sourced file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : Attempt to resolve method: until() on undefined variable or class name: wait : at Line: 9 : in file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' : wait .until ( ExpectedConditions .visibilityOfElementLocated ( By .cssSelector ( ".keyword-search:nth-child(6) .col-lg-6 > .form-control" ) ) ) 
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*; import or . . . '' at line number 9
+2022-03-06 22:01:01,835 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:01:01,835 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:01:01,918 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:01:01,918 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:03:41,089 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:03:41,091 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:03:41,092 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:03:41,139 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:03:41,139 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:03:41,139 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:03:41,139 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:03:41,142 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:03:41,142 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:03:41,142 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:03:45,448 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:03:51,278 ERROR c.g.j.p.w.s.WebDriverSampler: Sourced file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //search . . . '' : Attempt to resolve method: until() on undefined variable or class name: wait : at Line: 8 : in file: inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //search . . . '' : wait .until ( ExpectedConditions .visibilityOfElementLocated ( By .cssSelector ( ".keyword-search:nth-child(6) .col-lg-6 > .form-control" ) ) ) 
+ in inline evaluation of: ``import org.openqa.selenium.*; import org.openqa.selenium.support.ui.*;  //search . . . '' at line number 8
+2022-03-06 22:03:53,447 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:03:53,448 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:03:53,529 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:03:53,530 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:05:00,433 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:05:00,434 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:05:00,435 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:05:00,475 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:05:00,475 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:05:00,475 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:05:00,475 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:05:00,477 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:05:00,477 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:05:00,477 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:05:04,969 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:05:13,429 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:05:13,430 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:05:13,506 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:05:13,506 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:05:34,827 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:05:34,828 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:05:34,829 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:05:34,870 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:05:34,870 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:05:34,870 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:05:34,871 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:05:34,872 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:05:34,872 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:05:34,872 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:05:37,911 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:05:46,640 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:05:46,649 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:05:46,723 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:05:46,724 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:07:25,483 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:07:25,485 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:07:25,485 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:07:25,534 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:07:25,534 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:07:25,535 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:07:25,535 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:07:25,536 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:07:25,536 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:07:25,536 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:07:28,601 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:07:37,947 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:07:37,948 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:07:38,024 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:07:38,024 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-06 22:13:53,669 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-06 22:13:53,671 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-06 22:13:53,672 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-06 22:13:53,737 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Baseline Thread Group
+2022-03-06 22:13:53,737 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Baseline Thread Group.
+2022-03-06 22:13:53,737 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-06 22:13:53,737 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2022-03-06 22:13:53,740 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-06 22:13:53,740 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-06 22:13:53,740 INFO o.a.j.t.JMeterThread: Thread started: Baseline Thread Group 1-1
+2022-03-06 22:13:56,785 INFO c.g.j.p.w.c.WebDriverConfig: Created browser object: ChromeDriver: chrome on MAC (null)
+2022-03-06 22:14:03,807 INFO o.a.j.t.JMeterThread: Thread is done: Baseline Thread Group 1-1
+2022-03-06 22:14:03,807 INFO o.a.j.t.JMeterThread: Thread finished: Baseline Thread Group 1-1
+2022-03-06 22:14:03,877 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-06 22:14:03,878 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
